@@ -10,7 +10,7 @@ Un portafolio web inmersivo y responsivo diseñado para mostrar experiencia en d
 ## 🚀 Demo en Vivo
 
 Puedes ver el proyecto desplegado aquí:
-**[🔗 Visitar Portafolio](https://portfolio-daniel.vercel.app)** 
+**[🔗 Visitar Portafolio](https://portfolio-v2-alpha-rosy.vercel.app)** 
 
 ![Portfolio Preview](public/preview.png)
 ---
