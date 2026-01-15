@@ -1,73 +1,88 @@
-# React + TypeScript + Vite
+# 👨‍💻 Daniel Cabrera - Interactive Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
-Currently, two official plugins are available:
+Un portafolio web inmersivo y responsivo diseñado para mostrar experiencia en desarrollo Full Stack e IoT. Construido con un enfoque en rendimiento, animaciones fluidas y consumo de datos en tiempo real.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Demo en Vivo
 
-## React Compiler
+Puedes ver el proyecto desplegado aquí:
+**[🔗 Visitar Portafolio](https://portfolio-daniel.vercel.app)** 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![Portfolio Preview](public/preview.png)
+---
 
-## Expanding the ESLint configuration
+## ✨ Características Principales
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* **⚡ Rendimiento Ultra-rápido:** Desarrollado con **Vite** para una carga instantánea y optimización de recursos.
+* **🎨 UI/UX Inmersiva:** Efectos **Parallax** y animaciones de entrada suaves utilizando **Framer Motion**.
+* **📱 Diseño Responsivo:** Estilizado con **Tailwind CSS**, asegurando una visualización perfecta en móviles, tablets y escritorio.
+* **🔄 Integración Dinámica con GitHub:** Conexión a la **GitHub REST API** para obtener y mostrar automáticamente mis repositorios más recientes y actualizados.
+* **📂 Sección de Proyectos Destacados:** Exhibición curada de proyectos clave (Empresa II, Chatfire, Discord Bot, Nexum) con enlaces directos y detalles técnicos.
+* **📄 Descarga de CV:** Acceso directo al currículum en formato PDF.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Stack Tecnológico
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Este proyecto utiliza las siguientes tecnologías y librerías:
+
+* **Core:** [React](https://reactjs.org/) (Hooks, Functional Components)
+* **Build Tool:** [Vite](https://vitejs.dev/)
+* **Estilos:** [Tailwind CSS](https://tailwindcss.com/)
+* **Animaciones:** [Framer Motion](https://www.framer.com/motion/)
+* **Iconografía:** [Lucide React](https://lucide.dev/)
+* **Data Fetching:** Native Fetch API (para GitHub)
+
+---
+
+## ⚙️ Instalación y Configuración Local
+
+Si deseas clonar y ejecutar este proyecto localmente, sigue estos pasos:
+
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone [https://github.com/mandarinoazul/portfolio-v1.git](https://github.com/mandarinoazul/portfolio-v1.git)
+    cd portfolio-v1
+    ```
+
+2.  **Instalar dependencias:**
+    ```bash
+    npm install
+    ```
+
+3.  **Iniciar el servidor de desarrollo:**
+    ```bash
+    npm run dev
+    ```
+
+4.  Abrir en el navegador:
+    Visita `http://localhost:5173/` para ver la aplicación.
+
+---
+
+## 📂 Estructura del Proyecto
+
+```text
+/public
+  ├── cv-daniel.pdf        # Archivo de Currículum
+  ├── project-*.png        # Screenshots de proyectos destacados
+/src
+  ├── App.tsx              # Componente principal y lógica de negocio
+  ├── index.css            # Configuración de Tailwind y estilos globales
+  ├── main.tsx             # Punto de entrada de React
+  └── ...
 ```
+📬 Contacto
+¿Te interesa mi perfil o quieres colaborar en un proyecto?
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Email: danieleduardocabreraramirez@gmail.com
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+GitHub: @mandarinoazul
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+LinkedIn: [https://www.linkedin.com/in/daniel-eduardo-86829124b]
+
+© 2026 Daniel Cabrera. Construido con pasión y código.
