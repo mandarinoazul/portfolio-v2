@@ -42,6 +42,7 @@ This project uses the following technologies and libraries:
 ## Local Installation and Setup
 
 If you wish to clone and run this project locally, follow these steps:
+(I questioned my self about having a guide for installation and setup of my portfolio but there is it)
 
 1. **Clone the repository:**
    ```bash
@@ -81,10 +82,12 @@ If you wish to clone and run this project locally, follow these steps:
 
 Are you interested in my profile or want to collaborate on a project?
 
-Email: danieleduardocabreraramirez@gmail.com
+Email: danieleduardocabreraramirez /@gmail.com /@hotmail.com
 
 GitHub: @mandarinoazul
 
 LinkedIn: [https://www.linkedin.com/in/daniel-eduardo-86829124b]
 
 © 2026 Daniel Cabrera. Built with passion and code.
+
+**🍊Dev**
