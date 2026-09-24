@@ -7,7 +7,7 @@ const EXPERIENCE = [
   {
     role: "Zoho Support & Operations",
     company: "Coronados International / IDT Corporation",
-    period: "2023 - Presente",
+    period: "2023 - 2026",
     desc: "Optimización de procesos operativos y soporte técnico de nivel CRM. Automatización de flujos de trabajo para mejorar la eficiencia del equipo.",
   },
   {
